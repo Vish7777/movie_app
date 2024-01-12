@@ -1,0 +1,45 @@
+a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .superNav {
+    font-size: 13px;
+  }
+  
+  .form-control {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  .logo-icon {
+    height: 24px; /* Set the height of your image icon */
+  }
+  
+  @media screen and (max-width: 540px) {
+    .centerOnMobile {
+        text-align: center;
+    }
+  }
+
+  #navvbar{
+    background-color: #CBAB58;
+  }
+
+  h2 {
+    font-family: "YourFontStyle", sans-serif; /* Replace "YourFontStyle" with the desired font style */
+    color: red; /* Replace #3366cc with the desired color code */
+    font-size: large;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

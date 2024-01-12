@@ -1,0 +1,49 @@
+/* moviedetails.component.css */
+.custom-dialog {
+    display: flex; /* Use flexbox to create a horizontal layout */
+  }
+  
+  .section {
+    padding: 20px; /* Add padding to each section */
+    box-sizing: border-box; /* Include padding in the total width */
+  }
+  
+  .image-section {
+    text-align: center; /* Center-align content in the image section */
+  }
+  
+  .details-section {
+    background: #262525; /* Change background color to light pink */
+    color: #ffffff; /* Text color in the details section */
+    margin-top: 20px; /* Add margin to create space between the sections */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  
+  
+  /* Style for the Wishlist button */
+  .details-section button {
+    background-color: #ff2c1f; /* Pink background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 15px; /* Add padding to the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    justify-content: center;
+  }
+  
+  .details-section button:hover {
+    background-color: #D81B60; /* Darker pink on hover */
+  }
+
+  .success-message {
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .wishlist-button{
+    justify-content: center;
+  }
+  
+  

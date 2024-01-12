@@ -1,0 +1,122 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top  p-3 shadow-sm" id="navvbar">
+  <div class="container">
+      <a class="navbar-brand" href="#"  >
+          <img src="assets/images/logo.png" alt="Logo Icon" width="140px" height="60px" class="logo-icon me-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                  <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-2 text-uppercase" href="/user/register">Register</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mx-2 text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="nav-link" href="/user/login">Login as User</a></li>
+                   <li><a class="nav-link" href="/admin/login">Login as Admin</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-2 text-uppercase" href="#">Contact us</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+
+<!---Login Form-->
+<section class="vh-230" style="background: linear-gradient(45deg, white, black, white, black); background-size: 400% 400%; animation: gradientAnimation 8s ease infinite;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+             
+                <img src="https://media.licdn.com/dms/image/D4D12AQHmIPTtYvYgeg/article-cover_image-shrink_720_1280/0/1693376589034?e=2147483647&v=beta&t=xydICGud9e7v_vI_vdx2wh7oItx4ZvOE5pSXAdloPxY"
+                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+              
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form>
+                    
+                  <!--   
+                                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5> -->
+                    
+                                      <div class="d-flex justify-content-center">
+                                        <div>
+                                          <h2>Admin Login</h2>
+                                        </div>
+                                    </div>
+
+                                      <div class="form-outline mb-4">
+                                        <label class="form-label" for="userName">Username</label>
+                                        <input type="text" id="userName" class="form-control form-control-lg" [(ngModel)]="userName" name="userName" required placeholder="Enter your username">
+                                        
+                                      </div>
+                    
+                                      <div class="form-outline mb-4">
+                                        <label class="form-label" for="password">Password</label>
+                                        <div class="input-group">
+                                          <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" name="password" required placeholder="Enter your password">
+                                          <button class="btn btn-outline-secondary" type="button" id="togglePassword" (click)="togglePasswordVisibility('password')">
+                                            <i class="fas" [ngClass]="{'fa-eye': passwordVisible, 'fa-eye-slash': !passwordVisible}"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                      
+                                    <div class="d-flex justify-content-center">
+                                      <div class="pt-1 mb-4">
+                                        <button class="btn btn-dark btn-lg btn-block" type="button" (click)="login()">Login</button>
+                                      </div>
+                                    </div>
+                                      <!-- <a class="small text-muted" href="#!">Forgot password?</a> -->
+                                     
+                                      
+                                    </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---->
+
+<ngx-spinner bdOpacity=0.9 bdColor="rgba(255,255,255,0.8)" size="medium" color="#fff" type="ball-spin-clockwise">
+  <p style="color: #fff">Loading...</p>
+</ngx-spinner>
+
+
+<section>
+  <footer class="text-light text-center py-3"  style="background-color: #CBAB58">
+    <p>&copy; 2023 Movie Website</p>
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+  

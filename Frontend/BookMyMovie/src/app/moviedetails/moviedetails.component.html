@@ -1,0 +1,32 @@
+<!-- moviedetails.component.html -->
+<div class="custom-dialog">
+    <!-- First Section: Image -->
+    <div class="section image-section">
+      <img [src]="data.image" alt="{{ data.title }}">
+    </div>
+  
+    <!-- Second Section: Basic Details -->
+    <div class="section details-section">
+      <h1 style="text-align: center; color: #ff2c1f;">{{ data.title }}</h1>
+      <p><span style="color: aquamarine;">Genre:</span> {{ data.genre.join(', ') }}</p>
+      <p><span style="color: aquamarine;">Description:</span> {{ data.description }}</p>
+      <br>
+      <br>
+      <div class="wishlist-button">
+      <ng-container *ngIf="!isInWishlist; else alreadyInWishlist">
+        <button mat-button color="primary" (click)="addToWishlist(data)">Add to Wishlist</button>
+      </ng-container>
+    </div>
+      <ng-template #alreadyInWishlist>
+       
+        <i class="fas fa-thumbs-up" style="color: gold; font-size: 2em;"></i>
+      </ng-template>
+      
+    </div>
+    
+
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+  
